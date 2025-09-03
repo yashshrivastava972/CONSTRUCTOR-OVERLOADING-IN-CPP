@@ -105,8 +105,11 @@ public:
 
 int main() {
     Student s1;                       // Calls default constructor
+    
     Student s2("Yash");               // Calls constructor with 1 parameter
+    
     Student s3("Aman", 101);          // Calls constructor with 2 parameters
+    
     Student s4("Ravi", 102, 95.5);    // Calls constructor with 3 parameters
 
     s1.display();
