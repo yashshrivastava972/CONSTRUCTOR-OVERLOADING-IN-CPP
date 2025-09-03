@@ -1,19 +1,19 @@
 # Aim: To Study and Implement Constructor Overloading
 
-#Tool: VS CODE.
+# Tool: VS CODE.
 
 # Theory:
 
-##Constructor Overloading in C++:
+## Constructor Overloading in C++:
 
-###1. What is a Constructor?
+### 1. What is a Constructor?
 A constructor is a special member function of a class that is automatically invoked when an object is created.
 
 Its main purpose is to initialize the data members of the object.
 
 It has the same name as the class and does not return any value (not even void).
 
-###2. What is Constructor Overloading?
+### 2. What is Constructor Overloading?
 
 Constructor Overloading means having multiple constructors in the same class with different parameter lists.
 
@@ -21,7 +21,7 @@ The compiler decides which constructor to call based on the number and type of a
 
 This is a type of Compile-Time Polymorphism (function overloading concept applied to constructors).
 
-###3.Why Do We Need Constructor Overloading?
+### 3.Why Do We Need Constructor Overloading?
 
 In real-world problems, objects may need to be initialized in different ways.
 
@@ -35,7 +35,7 @@ Sometimes you know all details (name, roll number, marks).
 
 To handle such situations, we overload constructors with different parameter lists.
 
-###4. Rules for Constructor Overloading
+### 4. Rules for Constructor Overloading
 
 Constructors must have the same name as the class.
 
@@ -47,7 +47,7 @@ Constructors cannot be inherited, but derived classes can call base class constr
 
 default constructor is invoked if no parameters are passed.
 
-###5. Types of Constructors (used in overloading)
+### 5. Types of Constructors (used in overloading)
 
 Default Constructor – no arguments.
 
@@ -57,7 +57,7 @@ Copy Constructor – initializes an object using another object.
 
 All these can coexist → that’s constructor overloading.
 
-###5. Example: Constructor Overloading in C++
+### 5. Example: Constructor Overloading in C++
 
 #include <iostream>
 using namespace std;
@@ -117,7 +117,7 @@ int main() {
     return 0;
 }
 
-###6. Output of the Program
+### 6. Output of the Program
 
 Name: Unknown | Roll: 0 | Marks: 0
 
@@ -127,7 +127,7 @@ Name: Aman | Roll: 101 | Marks: 0
 
 Name: Ravi | Roll: 102 | Marks: 95.5
 
-###7. Where is Constructor Overloading Used?
+### 7. Where is Constructor Overloading Used?
 
 Flexibility in object creation:
 
@@ -139,7 +139,7 @@ Code Reusability – reduces the need for multiple setter functions.
 
 Readability & Ease – more natural and intuitive initialization of objects.
 
-###8. Advantages of Constructor Overloading
+### 8. Advantages of Constructor Overloading
 
  Flexibility in object creation.
  
@@ -149,7 +149,7 @@ Readability & Ease – more natural and intuitive initialization of objects.
  
  Increases readability.
 
- ###9. Real-Life Example
+ ### 9. Real-Life Example
 
 Think of creating a Bank Account:
 
@@ -161,7 +161,7 @@ Sometimes with name + balance + account type.
 
 Instead of writing multiple initialization functions, you simply overload constructors.
 
-###10. Difference: Constructor Overloading vs Function Overloading
+### 10. Difference: Constructor Overloading vs Function Overloading
 
 | Feature     | Constructor Overloading | Function Overloading                           |
 | ----------- | ----------------------- | ---------------------------------------------- |
@@ -169,10 +169,10 @@ Instead of writing multiple initialization functions, you simply overload constr
 | Return type | No return type          | Can have different return types                |
 | Called when | Object is created       | Function is invoked explicitly                 |
 
-###In short:
+### In short:
 Constructor Overloading in C++ lets us create multiple ways to initialize objects, depending on available data. It makes classes flexible, reusable, and more practical for real-world applications. In other words, Constructor Overloading allows different ways of creating an object depending on available information. It’s just like having multiple “doors” to enter the same “room” (class).
 
-#Algorithms:
+# Algorithms:
 
 
 
