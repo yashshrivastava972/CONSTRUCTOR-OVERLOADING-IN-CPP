@@ -60,15 +60,11 @@ All these can coexist → that’s constructor overloading.
 ### 6. Example: Constructor Overloading in C++
 
 #include <iostream>
-
 using namespace std;
 
 class Student {
-
     string name;
-    
     int roll;
-    
     double marks;
 
 public:
@@ -76,11 +72,8 @@ public:
     // Default Constructor
     
     Student() {
-    
         name = "Unknown";
-
         roll = 0;
-        
         marks = 0.0;
         
     }
