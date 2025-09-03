@@ -57,87 +57,7 @@ Copy Constructor – initializes an object using another object.
 
 All these can coexist → that’s constructor overloading.
 
-### 6. Example: Constructor Overloading in C++
-
-#include 
-<iostream>
-
-using namespace std;
-
-class Student {
-
-    string name;
-    int roll;
-    double marks;
-
-public:
-
-    // Default Constructor
-    
-    Student() {
-        name = "Unknown";
-        roll = 0;
-        marks = 0.0;
-        
-    }
-
-    // Constructor with only name
-    Student(string n) {
-        name = n;
-        roll = 0;
-        marks = 0.0;
-    }
-
-    // Constructor with name and roll
-    Student(string n, int r) {
-        name = n;
-        roll = r;
-        marks = 0.0;
-    }
-
-    // Constructor with all values
-    Student(string n, int r, double m) {
-        name = n;
-        roll = r;
-        marks = m;
-    }
-
-    void display() {
-        cout << "Name: " << name 
-             << " | Roll: " << roll 
-             << " | Marks: " << marks << endl;
-    }
-};
-
-int main() {
-
-    Student s1;                       // Calls default constructor
-    
-    Student s2("Yash");               // Calls constructor with 1 parameter
-    
-    Student s3("Aman", 101);          // Calls constructor with 2 parameters
-    
-    Student s4("Ravi", 102, 95.5);    // Calls constructor with 3 parameters
-
-    s1.display();
-    s2.display();
-    s3.display();
-    s4.display();
-
-    return 0;
-}
-
-### 7. Output of the Program
-
-Name: Unknown | Roll: 0 | Marks: 0
-
-Name: Yash | Roll: 0 | Marks: 0
-
-Name: Aman | Roll: 101 | Marks: 0
-
-Name: Ravi | Roll: 102 | Marks: 95.5
-
-### 8. Where is Constructor Overloading Used?
+### 6. Where is Constructor Overloading Used?
 
 Flexibility in object creation:
 
@@ -149,7 +69,7 @@ Code Reusability – reduces the need for multiple setter functions.
 
 Readability & Ease – more natural and intuitive initialization of objects.
 
-### 9. Advantages of Constructor Overloading
+### 7. Advantages of Constructor Overloading
 
  Flexibility in object creation.
  
@@ -159,7 +79,7 @@ Readability & Ease – more natural and intuitive initialization of objects.
  
  Increases readability.
 
- ### 10. Real-Life Example
+ ### 8. Real-Life Example
 
 Think of creating a Bank Account:
 
@@ -171,7 +91,7 @@ Sometimes with name + balance + account type.
 
 Instead of writing multiple initialization functions, you simply overload constructors.
 
-### 11. Difference: Constructor Overloading vs Function Overloading
+### 9. Difference: Constructor Overloading vs Function Overloading
 
 | Feature     | Constructor Overloading | Function Overloading                           |
 | ----------- | ----------------------- | ---------------------------------------------- |
