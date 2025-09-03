@@ -174,5 +174,253 @@ Constructor Overloading in C++ lets us create multiple ways to initialize object
 
 # Algorithms:
 
+## 1. Algorithm: Constructor Overloading Example
 
+Start the program.
 
+Define a class Add.
+
+Inside the class, declare three overloaded constructors:
+
+Add(int a, int b) → adds two integers and prints the result.
+
+Add(float a, float b) → adds two float numbers and prints the result.
+
+Add(int a, int b, int c) → adds three integers and prints the result.
+
+In the main() function:
+
+Create object object1 with parameters (5, 6).
+
+Since both are integers, the constructor with two int parameters is called, and result 5 + 6 = 11 is printed.
+
+Create object object2 with parameters (5.5f, 6.5f).
+
+Since both are floats, the constructor with two float parameters is called, and result 12.0 is printed.
+
+Create object object3 with parameters (1, 2, 3).
+
+Since three integers are passed, the constructor with three int parameters is called, and result 6 is printed.
+
+End program.
+
+## 2. Algorithm: Student Constructor Overloading
+
+Start the program.
+
+Define a class Student.
+
+Data members:
+
+name → string
+
+rollno → integer
+
+marks → double
+
+Constructors:
+
+Student(string n)
+
+Assigns name = n
+
+Sets default values: rollno = 0, marks = 0.0
+
+Student(string n, int r, double m)
+
+Assigns name = n, rollno = r, marks = m
+
+Member function:
+
+display() → Prints name, rollno, and marks.
+
+In the main() function:
+
+Create object s1 using first constructor with only name = "Yash".
+
+Other values set to defaults (rollno = 0, marks = 0.0).
+
+Create object s2 using second constructor with all values (name = "Yash", rollno = 137, marks = 95.5).
+
+Print details of s1 using display().
+
+Print details of s2 using display().
+
+End program.
+
+## 3. Algorithm: Function Overloading (Square & Multiplication)
+
+Start the program.
+
+Define a class Math.
+
+Member functions:
+
+square(int x)
+
+Returns the square of a number: x * x.
+
+multiply(int x, int y)
+
+Returns the product of two integers: x * y.
+
+multiply(int x, int y, int z)
+
+Returns the product of three integers: x * y * z.
+
+In the main() function:
+
+Create an object obj of class Math.
+
+Call obj.square(5) → computes 5 * 5 = 25.
+
+Call obj.multiply(3, 4) → computes 3 * 4 = 12.
+
+Call obj.multiply(2, 3, 4) → computes 2 * 3 * 4 = 24.
+
+Print the results on the screen.
+
+End the program.
+
+## 4. Algorithm: Calculator Function Overloading
+
+Start the program.
+
+Define a class Calculator.
+
+Member functions:
+
+int add(int a, int b)
+
+Returns the sum of two integers.
+
+double add(double a, double b)
+
+Returns the sum of two doubles.
+
+double add(double a, double b, double c)
+
+Returns the sum of three doubles.
+
+In the main() function:
+
+Create an object obj of class Calculator.
+
+Call obj.add(5, 10) → chooses the int add(int, int) function.
+
+Call obj.add(3.5, 4.2) → chooses the double add(double, double) function.
+
+Call obj.add(2.2, 3.3, 4.4) → chooses the double add(double, double, double) function.
+
+Display results on the screen.
+
+End program.
+
+## 5. Algorithm: Operator Overloading for Complex Numbers
+
+Start the program.
+
+Define a class Complex.
+
+Private data members:
+
+real → integer part of the complex number.
+
+imag → imaginary part of the complex number.
+
+Constructor:
+
+Complex(int r = 0, int i = 0)
+
+Initializes real = r, imag = i.
+
+Default values (0) make it possible to create objects without arguments.
+
+Operator Overloading Function:
+
+Complex operator+(Complex const& obj)
+
+Creates a temporary object res.
+
+Adds corresponding parts:
+
+res.real = real + obj.real
+
+res.imag = imag + obj.imag
+
+Returns the result object res.
+
+Member function print():
+
+Displays complex number in the form:
+
+real + imag i
+
+In the main() function:
+
+Create c1(10, 5) → complex number 10 + 5i.
+
+Create c2(2, 4) → complex number 2 + 4i.
+
+Perform c3 = c1 + c2 → calls overloaded operator+.
+
+Calculation: (10 + 2) + (5 + 4)i = 12 + 9i.
+
+Print c3 → output is 12 + 9i.
+
+End program.
+
+## 6. Algorithm: Prefix Increment Operator Overloading
+
+Start the program.
+
+Define a class Counter.
+
+Private data member:
+
+value → integer counter.
+
+Constructor:
+
+Counter(int v = 0) → initializes value = v.
+
+Default parameter (0) allows creating objects without arguments.
+
+Overloaded Operator Function:
+
+Counter operator++() → defines prefix increment.
+
+Increments value by 1 (++value).
+
+Returns the updated object (*this).
+
+Member Function:
+
+show() → prints the current value of the counter.
+
+In the main() function:
+
+Create object c1(5) → initializes counter with value = 5.
+
+Print value before increment → 5.
+
+Apply prefix increment: ++c1.
+
+Calls overloaded operator++().
+
+Updates value to 6.
+
+Print value after increment → 6.
+
+End program.
+
+# Conclusion:
+Constructor overloading in C++ provides flexibility by allowing multiple ways to initialize objects of a class.
+
+It enables the creation of objects with different sets of initial data (default, partial, or full).
+
+It is an example of compile-time polymorphism, as the compiler selects the appropriate constructor based on the argument list.
+
+This makes programs more readable, reusable, and user-friendly, while avoiding redundant code.
+
+In simple words: Constructor overloading allows us to create objects in different situations using a single class with multiple constructors.
