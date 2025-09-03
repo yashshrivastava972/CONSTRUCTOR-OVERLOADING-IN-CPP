@@ -104,6 +104,7 @@ public:
 };
 
 int main() {
+
     Student s1;                       // Calls default constructor
     
     Student s2("Yash");               // Calls constructor with 1 parameter
